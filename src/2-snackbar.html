@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/2-snackbar.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
+        <h1 class="main-title">Snackbar</h1>
+      </div>
+      <form class="form">
+        <label class="container-delay lbl">
+          Delay (ms)
+          <input
+            class="container-delay delay"
+            type="number"
+            name="delay"
+            required
+          />
+        </label>
+
+        <fieldset class="inp-field">
+          <legend class="lbl">State</legend>
+          <label class="lbl">
+            <input
+              class="rd"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="lbl">
+            <input
+              class="rd"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="btn-sbm" type="submit">Create notification</button>
+      </form>
+    </main>
+  </body>
+</html>
